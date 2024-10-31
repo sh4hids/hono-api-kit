@@ -9,7 +9,7 @@ const config = {
     tabWidth: 4,
     semi: true,
     singleQuote: true,
-    importOrder: ['<THIRD_PARTY_MODULES>', '^@lib/(.*)$', '^[./]'],
+    importOrder: ['<THIRD_PARTY_MODULES>', '^@/(.*)$', '^[./]'],
     importOrderSeparation: true,
     importOrderSortSpecifiers: true,
 };

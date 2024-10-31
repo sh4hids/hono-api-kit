@@ -2,7 +2,7 @@ import type { ErrorHandler } from 'hono';
 import type { StatusCode } from 'hono/utils/http-status';
 import { StatusCodes } from 'http-status-codes';
 
-export const onError: ErrorHandler = (err, c) => {
+const onError: ErrorHandler = (err, c) => {
     const currentStatus =
         'status' in err ? err.status : c.newResponse(null).status;
     const statusCode =
@@ -19,3 +19,5 @@ export const onError: ErrorHandler = (err, c) => {
         statusCode
     );
 };
+
+export default onError;
