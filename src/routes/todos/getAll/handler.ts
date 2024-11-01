@@ -1,16 +1,13 @@
 import { StatusCodes } from 'http-status-codes';
 
+import db from '@/db';
 import { AppRouteHandler } from '@/lib/types';
-import { GetAllRoute } from '@/routes/todos/getAll/route';
+import { GetAllTodosRoute } from '@/routes/todos/getAll/route';
 
-export const getAllHandler: AppRouteHandler<GetAllRoute> = (c) => {
-    return c.json(
-        [
-            {
-                name: 'Learn Hono',
-                isCompleted: false,
-            },
-        ],
-        StatusCodes.OK
-    );
+export const getAllTodosHandler: AppRouteHandler<GetAllTodosRoute> = async (
+    c
+) => {
+    const todos = await db.query.todos.findMany();
+
+    return c.json(todos, StatusCodes.OK);
 };
