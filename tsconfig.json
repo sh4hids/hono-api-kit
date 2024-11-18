@@ -1,15 +1,15 @@
 {
-    "compilerOptions": {
-        "target": "ESNext",
-        "module": "ESNext",
-        "strict": true,
-        "moduleResolution": "Bundler",
-        "skipLibCheck": true,
-        "types": ["node"],
-        "jsx": "react-jsx",
-        "jsxImportSource": "hono/jsx",
-        "paths": {
-            "@/*": ["./src/*"]
-        }
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "strict": true,
+    "moduleResolution": "Bundler",
+    "skipLibCheck": true,
+    "types": ["node"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "paths": {
+      "@/*": ["./src/*"]
     }
+  }
 }

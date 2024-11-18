@@ -1,3 +1,3 @@
 export default {
-    '*': ['eslint . --fix', 'prettier . --write'],
+  '*': ['eslint . --fix', 'prettier . --write'],
 };

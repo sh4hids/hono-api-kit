@@ -5,16 +5,16 @@ import pretty from 'pino-pretty';
 import env from '@/env';
 
 export default function logger() {
-    return pinoLogger({
-        pino: pino(
-            {
-                level: env.LOG_LEVEL || 'info',
-                redact: ['password', 'token', 'secret'],
-            },
-            env.NODE_ENV === 'production' ? undefined : pretty()
-        ),
-        http: {
-            reqId: () => crypto.randomUUID(),
-        },
-    });
+  return pinoLogger({
+    pino: pino(
+      {
+        level: env.LOG_LEVEL || 'info',
+        redact: ['password', 'token', 'secret'],
+      },
+      env.NODE_ENV === 'production' ? undefined : pretty()
+    ),
+    http: {
+      reqId: () => crypto.randomUUID(),
+    },
+  });
 }

@@ -8,25 +8,25 @@ import jsonContent from '@/lib/jsonContent';
 import { ApiTags } from '@/lib/types';
 
 const router = createRouter().openapi(
-    createRoute({
-        tags: ApiTags.Root,
-        method: 'get',
-        path: '/ping',
-        responses: {
-            [HttpStatusCodes.OK]: jsonContent(
-                createMessageObjectSchema('Pong!'),
-                'Health check'
-            ),
-        },
-    }),
-    (c) => {
-        return c.json(
-            {
-                message: 'Pong!',
-            },
-            StatusCodes.OK
-        );
-    }
+  createRoute({
+    tags: ApiTags.Root,
+    method: 'get',
+    path: '/ping',
+    responses: {
+      [HttpStatusCodes.OK]: jsonContent(
+        createMessageObjectSchema('Pong!'),
+        'Health check'
+      ),
+    },
+  }),
+  (c) => {
+    return c.json(
+      {
+        message: 'Pong!',
+      },
+      StatusCodes.OK
+    );
+  }
 );
 
 export default router;

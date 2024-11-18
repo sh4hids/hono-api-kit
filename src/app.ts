@@ -1,10 +1,10 @@
 import configureOpenAPI from '@/lib/configureOpenAPI';
 import createApp from '@/lib/createApp';
 import root from '@/routes/root.route';
-import todos from '@/routes/todos';
+import tasks from '@/routes/tasks';
 
 const app = createApp();
-const routes = [root, todos];
+const routes = [root, tasks];
 
 configureOpenAPI(app);
 
