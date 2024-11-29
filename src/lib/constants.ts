@@ -6,6 +6,10 @@ export const notFoundSchema = createMessageObjectSchema(
   ReasonPhrases.NOT_FOUND
 );
 
+export const unauthorizedSchema = createMessageObjectSchema(
+  ReasonPhrases.UNAUTHORIZED
+);
+
 export const ZOD_ERROR_MESSAGES = {
   REQUIRED: 'Required',
   EXPECTED_NUMBER: 'Expected number, received nan',
