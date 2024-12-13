@@ -17,40 +17,40 @@
     "validate": "npm-run-all --parallel check:*"
   },
   "dependencies": {
-    "@asteasolutions/zod-to-openapi": "^7.2.0",
+    "@asteasolutions/zod-to-openapi": "^7.3.0",
     "@hono/node-server": "^1.13.7",
     "@hono/zod-openapi": "^0.16.4",
     "@libsql/client": "^0.14.0",
-    "@scalar/hono-api-reference": "^0.5.162",
+    "@scalar/hono-api-reference": "^0.5.163",
     "bcrypt": "^5.1.1",
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.4.7",
     "dotenv-expand": "^11.0.7",
     "drizzle-orm": "^0.36.4",
     "drizzle-zod": "^0.5.1",
-    "hono": "^4.6.12",
+    "hono": "^4.6.13",
     "hono-pino": "^0.4.0",
     "http-status-codes": "^2.3.0",
     "openapi3-ts": "^4.4.0",
     "pino": "^9.5.0",
-    "zod": "^3.23.8"
+    "zod": "^3.24.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.15.0",
+    "@eslint/js": "^9.16.0",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/bcrypt": "^5.0.2",
     "@types/eslint__js": "^8.42.3",
-    "@types/node": "^20.17.9",
+    "@types/node": "^20.17.10",
     "drizzle-kit": "^0.27.2",
-    "eslint": "^9.15.0",
+    "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.10",
+    "lint-staged": "^15.2.11",
     "npm-run-all": "^4.1.5",
     "pino-pretty": "^11.3.0",
     "prettier": "3.3.3",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.16.0",
-    "vitest": "^2.1.6"
+    "typescript-eslint": "^8.18.0",
+    "vitest": "^2.1.8"
   }
 }
