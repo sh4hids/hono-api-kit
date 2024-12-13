@@ -1,15 +1,18 @@
-```
-npm install
-npm run dev
+A simple and well documented API kit for Hono and OpenAPI.
+
+## Commands
+
+```sh
+pnpm install
+pnpm run dev
 ```
 
-```
-open http://localhost:3000
+```sh
+open http://localhost:4321/ping
 ```
 
-Main packages
+## API Reference
 
-- hono
-- openapi
-- zod
-- https://scalar.com/
+```sh
+http://localhost:4321/reference
+```
